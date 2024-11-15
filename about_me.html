@@ -1,0 +1,38 @@
+<html lang="en-US">
+    <head>
+        <title>About Me</title>
+
+        <link rel="stylesheet" href="general_design.css">
+    </head>
+
+    <body>
+
+        <!--About Me-->
+        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-bottom: 40;">About me,</h2>
+        
+        <p id="aboutMeText" style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin: auto; width: 515; text-align: center;">
+            Hello, My name is İhsan, I am a Computer Engineering Student from Turkey.
+            My hobbies are playing basketball, listening to music and learning about aviation industry.<br>
+            <span id="extraText" style="display: none;">
+            In programming-wise, I am interested in A.I. and Web Development.
+            I started coding back in middle school as the outcome of my curiosity for how games were made. 
+            Later, I started learning scratch and made couple of games with it. And then when I started
+            learning C# and unfortunately I gave up before I got proefficient to create a proper game.
+            Even though it was a great first step for my programming career.
+            Still today, even though I haven't done anything about it, I still have plans for 
+            doing something about game development in the future.
+            </span>
+        </p>
+        
+        <div id="showMoreContainer">
+            <button id="showMoreBtn" style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-bottom: 30; background-color: transparent; border-color: transparent;" onclick="toggleText()">--&gtShow More&lt--</button>
+        </div>
+
+        <div style="text-align: center;">
+            <button style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="document.location='main_page.html'">Main Page</button>
+            <button style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="document.location='past_projects.html'">My Past Projects</button>
+        </div>
+
+        <script src="general_functionality.js"></script>
+    </body>
+</html>

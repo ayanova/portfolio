@@ -1,0 +1,51 @@
+<html lang="en-US">
+    
+    <head>
+        <title>My Github Portfolio</title>
+        <link rel="stylesheet" href="general_design.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <!--Menu-->
+
+    <body>
+        <h1 style="text-align: center; margin-bottom: 30;">Welcome to My Github Portfolio!</h1>
+        
+        <div id="clock" style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; font-size: 30;">00:00:00</div>
+        <div id="date" style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; font-size: 15; margin-bottom: 25;"></div>
+
+        <img src="profile.jpg" alt="main_profile" style="height: 150; width: 150; display: block; margin: auto; margin-bottom: 50;">
+        
+        <div style="text-align: center;">
+            <button style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="document.location='about_me.html'">About Me</button>
+            <button style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="document.location='past_projects.html'">My Past Projects</button>
+        </div>
+
+        <!--Contact with me-->
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-top: 40;">Contact with me</h4>
+        
+        <form name="contact_with_me">
+            <div style="text-align: center; margin-bottom: 10;">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+            </div>    
+
+            <div style="text-align: center; margin-bottom: 10;">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <!--Email format check?-->
+            </div>
+
+            <div style="text-align: center; margin-bottom: 15;">
+                <textarea id="message" name="message" style="height: 200px; width: 207px;" placeholder="Type here"></textarea> 
+            </div>
+
+            <div style="text-align: center;">
+                <button style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="popup_submit()">Submit</button>
+            </div>
+
+        </form>
+
+        <script src="general_functionality.js"></script>
+    </body>
+</html>
